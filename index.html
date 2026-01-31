@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta name="author" content="Ricardo Hernández">
+   <meta name="description" content="Pagina con una demostracion del cajamodel para CSS">
+   <meta name="keywords" content="HTML, etiquetas, ISW, RHS, cajamodel, CSS">
+   <link rel="stylesheet" href="Assets/styles.css">
+
+   <title>cajaModel- Ricardo Hernandez Salas</title>
+</head>
+
+<body class="mainBody">
+
+
+   <h1>cajaModel Demo</h1>
+   <h2>Ricardo Hernandez Salas</h2>
+   <div class="profilePic">
+      <img src="Resources\RicardoHernandezFoto.png" alt="Foto de Ricardo Hernandez Salas">
+   </div>
+   <!-- Primera parte sobre los elementos tipo inline o block-->
+   <p>Lo siguiente es una demostracion de la propiedad display y sus tipos.</p>
+   <p> <strong>w3scholl indica: </strong> </p>
+   <blockquote>
+      El display La propiedad especifica el comportamiento de visualización (el tipo de cuadro de renderizado) de un
+      elemento.
+      <br>
+      <h3>Inline (Default)</h3>
+      <p>Los elementos solo ocupan su espacio por defecto y no se les puede cambiar el width ni el height.</p>
+      <h3>Block</h3>
+      <p>Los elementos ocupan todo el espacio disponible y se les puede cambiar el width y el height.</p>
+      <h3>Inline-Block</h3>
+      <p>Los elementos se comportan como inline pero se les puede cambiar el width y el height.</p>
+   </blockquote>
+   <br>
+   <br>
+   <div class="Inlinecaja">
+      <h3>Ejemplo de elementos Inline</h3>
+      <p>Podemos visualizar su borde para ver como se comporta, es un span y por defecto es inline</p>
+      <p>Solo ocupa el espacio por defecto de sus margenes, no toda la ventana </p>
+      <span class="inlinecaja">Caja Inline </span>
+   </div>
+   <br>
+   <div class="Blockcaja">
+      <h3>Ejemplo de elementos Block</h3>
+      <p>Podemos visualizar su borde para ver como se comporta, es un div y por defecto es block</p>
+      <p>Ocupa todo el espacio disponible en la ventana </p>
+      <div id="blockcaja">Caja Block </div>
+   </div>
+
+   <div class="InlineBlockcaja">
+      <h3>Ejemplo de elementos Inline-Block</h3>
+      <p>Podemos visualizar su borde para ver como se comporta, es un span pero con display inline-block</p>
+      <p>Ocupa solo el espacio necesario pero se le puede cambiar el width y height </p>
+      <p>Para efectos de este ejemplo vamos a ponerle un width de 150px y height de 50px</p>
+      <span id="inlineBlockcaja">
+         <p>Caja Inline-Block </p>
+      </span>
+   </div>
+
+   <h3>Display None</h3>
+   <p>Cuando un elemento tiene el display none, no se ve de ninguna forma pero aparte tampoco ocupa un espacio del todo.
+      Por eso el otro contenedor ocupa el espacio del que tiene el display none.</p>
+   <div class="display-none"> este texto no se vera</div>
+   <span class="inlinecaja">Caja luego del display none </span>
+
+   <!-- Ejemplo de uso de margin y padding -->
+
+   <h2>Ejemplo de uso de margin y padding </h2>
+
+   <h3>margin</h3>
+   <p>El margin se cuenta desde los bordes de las ventanas del navegador</p>
+   <p>A este contenedor los estoy moviendo con un margen a la derecha de 500px</p>
+   <div class="Caja1">
+
+
+   </div>
+
+   <h3>Padding</h3>
+   <p>El padding se cuenta desde los bordes del elemento propiamente, sin salirse de el</p>
+   <p>Este primer contenedor tiene un padding de 25px, por estos bodes internos, el texto no sale exactamente en el
+      inicio del contenedor</p>
+   <div class="Caja2">
+      <p> texto interno</p>
+   </div>
+   <p>Este es el mismo contenedor pero sin padding</p>
+   <div class="Caja3">
+      <p> texto interno</p>
+   </div>
+
+   <!-- Ejemplos de uso de position -->
+
+
+   <h2>Ejemplos de uso de position</h2>
+   <div>
+      <h3>Static</h3>
+      <p>Por defecto los elementos son estaticos, estos no se mueven con respecto a su contenedor, aunmque le ponga
+         right 1000px</p>
+
+      <div class="static-caja">
+         <img id="jesus" src="Resources\IXOYE.png" alt="">
+      </div>
+      <br>
+      <h3>Relative</h3>
+      <p>Los elementos con position relative se mueven con respecto a su contenedor original, un punto en su contenedor,
+         como una esquina.</p>
+      <p>Aca lo estamos centrando con un top 50pc y left 50% y un translate para que se mueva el eje de su contenedor al
+         centro</p>
+      <div class="relative-caja">
+         <img id="jesus" src="Resources\IXOYE.png" alt="">
+      </div>
+      <br>
+      <h3>Absolute</h3>
+      <p>Los elementos con position absolute se mueven con respecto a su contenedor padre mas cercano que tenga position
+         relative, absolute o fixed.</p>
+      <p>Esta caja padre con la imagen de Jeova en Hebreo es relativa y el padre para la absoluta que es la de Jesus</p>
+      <p>Hice la imagen mas pequeña y la puse en el centro de la otra.</p>
+      <div class="relative-caja-padre">
+         <img id="jesus" src="Resources\jahwe.png" alt="">
+
+         <div class="absolute-caja">
+            <img id="jesus-mini" src="Resources\IXOYE.png" alt="">
+         </div>
+      </div>
+
+
+
+   </div>
+   <br>
+   <br>
+   <h3>Fixed</h3>
+   <p>Los elementos con position fixed se mueven con respecto a la ventana del navegador, no al contenedor y se quedan
+      quietos donde los colocamos</p>
+   <p>Se puede uasr para menus por ejemplo:</p>
+   <p>En este caso la imagen se puede ver como un sello en la parte inferior derecha de la pagina.</p>
+   <div class="fixed-caja">
+      <img id="jesus" src="Resources\jahwe.png" alt="">
+
+   </div>
+   <h3>Sticky</h3>
+   <p>Los elementos con position sticky se quedan en una posicion y se pegan a 
+      ella cuando el usuario hace scroll, nuevamente util para menus</p>
+   </p>
+    <div class="sticky-caja">
+      <img id="jesus" src="Resources\jahwe.png" alt="">
+
+   </div>
+
+
+
+
+
+
+
+   <!-- Float y clear -->
+
+   <h2>Float y Clear</h2>
+   <p>Float sirve para mover las imagenes y quie sean envueltas por los elementos que le siguen. </p>
+   <p>Las siguientes 3 cajas las voy a float y con el mismo ancho van a quedar una seguida de otra.</p>
+   <p>Ocupan un 25% del espacio de la ventana cada una, por lo que deben haber 4</p>
+   <p>La cuarta caja tiene la propiedad clear: both para que no se envuelva con las anteriores, igual ocupa un 25% del
+      espacio pero no se envuelve porque tiene el clear.</p>
+
+   <div class="float-caja"> 1</div>
+   <div class="float-caja"> 2</div>
+   <div class="float-caja"> 3</div>
+   <div class="clear-caja">Clear: both</div>
+
+
+
+
+
+   <!-- D. OVERFLOW -->
+
+   <h2>Overflow</h2>
+   <p>El overflow controla cómo se comportan los elementos cuando su contenido es más grande que el espacio disponible.
+   </p>
+   <h3>Visibible (Por defecto)</h3>
+   <p>El valor visible permite que el contenido se muestre completamente, incluso si excede el tamaño del contenedor.
+   </p>
+   <div id="overflow" class="overflow-caja visible">Un overflow visible Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Veritatis</div>
+   <br>
+   <br>
+   <h3>Hidden</h3>
+   <p>El valor hidden oculta el contenido que excede el tamaño del contenedor.</p>
+
+   <div id="overflow" class="overflow-caja-hidden">Un overflow hidden Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Veritatis</div>
+   <br>
+   <br>
+   <h3>scroll</h3>
+   <p>El valor scroll muestra una barra de desplazamiento cuando el contenido excede el tamaño del contenedor.</p>
+   <div id="overflow" class="overflow-caja-scroll">Un overflow scroll Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Veritatis</div>
+   <br>
+   <br>
+   <h3>Auto</h3>
+   <p>El valor auto muestra una barra de desplazamiento aunque no sea necesaria, notese la horizontal que no es
+      necesaria.</p>
+   <div id="overflow" class="overflow-caja-auto">Un overflow auto Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Veritatis</div>
+   <br>
+   <br>
+
+   <!-- visibilidad -->
+
+   <h2> Visibility</h2>
+   <p>Se trata de una propiedad que permite ocultar elementos sin eliminarlos del DOM. Los elementos con visibility: hidden no se muestran, pero ocupan espacio en la página.</p>
+   <p>La primera caja esta como hidden (ocupa espacio pero no se muestra)</p>
+   <div id="vis" class="hidden-caja">Hidden (ocupa espacio)</div>
+   <div id="vis" class="visible-caja">Visible</div>
+      <br>
+      <br>
+      <br>
+
+   <!-- F. Z-INDEX -->
+
+   <h2>Z-Index</h2>
+   <p>Simplemente varia el orden de los elementos en el eje z, como si fueran capas.</p>
+   <p>Como se puede observar la caja Z-2 está por encima de la Z-1 porque tiene un z-index mayor, por eso puse los textos y los colores opacos para que se vea claramente.</p>
+   <div class="z-container">
+      <div class="z1">Z-1</div>
+      <div class="z2">Z-2</div>
+    </div>
+
+
+
+
+
+
+   <footer>
+      <p>Pagina creada por Ricardo Hernández Salas &copy; 2026</p>
+
+   </footer>
+
+</body>
+
+</html>

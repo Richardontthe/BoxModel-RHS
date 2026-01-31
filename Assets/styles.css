@@ -1,0 +1,259 @@
+.mainBody{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: rgba(212, 201, 201, 0.712);
+ 
+}
+
+h2 {
+    color: rgb(4, 54, 2);
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    color: rgb(2, 36, 136);
+}
+.profilePic  img{
+    width: 300px;
+    height: 320px;
+    float: left;
+    margin-right: 20px;
+    clear: both;
+  }
+
+  .inlineBox {
+ 
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+   }
+
+  .InlineBox #p {
+   color : red;
+  }
+
+  .display-none {
+    display: none;
+   }
+
+  #blockBox {
+    display: block;
+    border: 2px solid green;
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgreen;
+    text-align: center;
+   }
+   
+   #inlineBlockBox{
+
+        display:  inline-block;
+        border: 2px solid orange;
+        width: 800px;
+        height: 200px;
+        background-color: lightcoral;
+        text-align: center;
+   }
+   
+ 
+   .Caja1  {
+
+    background-color: lightgreen;
+    position: relative;
+    margin-left: 500px;
+    width: 150px;
+    height: 150px;
+    border:2px dashed black;
+
+   }
+   .Caja2  {
+
+    background-color: lightblue;
+    position: relative;
+    padding: 25px;
+    width: 150px;
+    height: 150px;
+   }
+   .Caja2 p {
+
+    background-color: blue;
+    color : white;
+    height: auto;
+   }
+   .Caja3  {
+
+    background-color: lightblue;
+    position: relative;
+    width: 150px;
+    height: 150px;
+   }
+   .Caja3 p {
+
+    background-color: blue;
+    color : white;
+    height: auto;
+ 
+   }
+
+   .static-caja{
+
+    background: lightblue;
+    padding: 10px;
+    display: inline-block;
+    right: 1000px;
+   }
+
+   #jesus {
+    width: 150px;
+    height: 100px;
+   }
+
+   .relative-caja {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    translate: -50% -50%;
+    background: lightgreen;
+    padding: 10px;
+    display: inline-block;
+}
+  
+   .relative-caja-padre {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    translate: -50% -50%;
+    background: rgb(204, 154, 236);
+    padding: 10px;
+    display:  inline-block;
+ }
+.absolute-caja {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: salmon;
+    translate: -50% -50%;
+
+ }
+
+ .fixed-caja {
+     clear: both;
+ }
+
+ #jesus-mini{
+    width: 50px;
+    height: 30px;
+ }
+
+.fixed-caja {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: gold;
+    padding: 10px;
+}
+.float-caja {
+    float: left;
+    width: 25%;
+    height: 80px;
+    background: lightcoral;
+    margin: 5px;
+    text-align: center;
+    line-height: 80px;
+}
+.clear-caja {
+    clear: both;
+    background: rgb(48, 188, 223);
+    display: block;
+     margin: 5px;
+    text-align: center;
+    width: 25%;
+}
+
+.sticky-caja {
+    position: sticky;
+    display: inline-block;
+    top: 0;
+    left: 50%;
+    translate: -50% ;
+    background: lightgray;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#overflow {
+    width: 200px;
+    height: 60px;
+    border: 2px solid black;
+ }
+
+.overflow-caja-hidden {
+    overflow: hidden;
+    }
+
+.overflow-caja-scroll {
+    overflow: scroll;
+    }
+
+.overflow-caja-auto {
+    overflow: auto;
+    }
+
+    #vis {
+
+      float : left;
+    }
+
+    .visible-caja {
+        width: 150px;
+        height: 50px;
+        background-color: lightgreen;
+        border: 2px solid black;
+        margin: 5px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .hidden-caja {
+ 
+        visibility: hidden;
+    }
+
+    .z-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 20px auto;
+        z-index: -1;
+    }
+
+    .z1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate:  -50% -50%;
+        width: 150px;
+        height: 150px;
+        background-color: lightblue;
+        border: 2px solid black;
+        z-index: 1;
+        text-align: center;
+        line-height: 150px;
+    }
+    .z2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate:  -50% -50%;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(180, 230, 173, 0.377);
+        border: 2px solid black;
+        z-index: 2;
+        text-align: center;
+        line-height: 150px;
+    }
