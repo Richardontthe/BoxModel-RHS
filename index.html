@@ -292,12 +292,120 @@
          
       </div>
       
+      <h3>Justify content</h3>
+      <p>Esta propiedad permite alinear los elementos dentro de un contenedor flexible a lo largo del eje principal ya sea row o column</p>
+      
+      <div class="contenedorPadre-justify">
+         Justify Content right
+         <div class="elementoHijo">1</div>
+         <div class="elementoHijo">2</div>
+         <div class="elementoHijo">3</div>
+         <div class="elementoHijo">4</div>
+         <div class="elementoHijo">5</div>
+         
+      </div>
+      <h3>Align items</h3>
+      <p>Esta propiedad permite alinear los elementos dentro de un contenedor flexible a lo largo del eje secundario ya sea row o column</p>
+      <p>Este es un align center con row wrap.</p>
+      <div class="contenedorPadre-align">
+      
+          <div class="elementoHijo">1</div>
+         <div class="elementoHijo">2</div>
+ 
+         
+      </div>
+      <h3>Align content</h3>
+      <p>Alinea varias filas pero solo funciona con wrap, en este caso es space-between entonces deja un espacio en medio.</p>
+ 
+      <div class="contenedorPadre-align-content">
+      
+         <div class="elementoHijo">1</div>
+         <div class="elementoHijo">2</div>
+         <div class="elementoHijo">3</div>
+         <div class="elementoHijo">4</div>
+         <div class="elementoHijo">5</div>
+ 
+         
+      </div>
+      
+      <!-- Flex Items -->
+       <h2>Flex Items</h2>
+       <p>Los elementos flexibles son los elementos hijos de un contenedor flexible que tienen sus propiedades.</p>
+      <h3>Order</h3>
+      <p>Permite cambiar el orden de los elementos dentro del contenedor flex</p>
+      <div class="contenedor">
+         <div id="item" class="orden1">Segundo</div>
+         <div id = "item" class="orden2">Primero</div>
+      </div>
+      </section>
+
+      <!-- Flex-grow  -->
+      <section>
+      <h3>Flex-grow</h3>
+      <p>Permite que un item crezca en proporción al espacio disponible</p>
+      <div class="contenedor">
+         <div  id="item" class="grow">Crece más</div>
+         <div id="item" >Normal</div>
+      </div>
+      </section>
+
+      <!-- FLEX-SHRINK -->
+      <section>
+      <h3>Flex-shrink</h3>
+      <p>Permite que un item se encoga en proporción al espacio disponible</p>
+      <div class="contenedor" style="width:200px;">
+         <div id="item" class="shrink">Se encoge</div>
+         <div id="item-big" >Normal</div>
+      </div>
+      </section>
+
+      <!-- FLEX-BASIS -->
+      <section>
+      <h3>Flex-basis</h3>
+      <p>Establece el tamaño inicial de un elemento flexible antes de que se aplique el espacio disponible</p>
+      <div class="contenedor">
+         <div id="item" class="basis">200px base</div>
+         <div id="item"  >Auto</div>
+      </div>
+      </section>
+
+      <!-- FLEX (ATAJO) -->
+      <section>
+      <h3>flex (atajo)</h3>
+      <p>Permite establecer flex-grow, flex-shrink y flex-basis en una sola propiedad</p>
+      <div class="contenedor">
+         <div id="item" class="short">Flex</div>
+         <div id="item" >Normal</div>
+      </div>
+      </section>
+
+      <!-- ALIGN-SELF -->
+      <section>
+      <h3>Align-self</h3>
+      <p>Permite alinear un elemento individual dentro de un contenedor flexible</p>
+      <div class="contenedor" style="height:120px; align-items:center;">
+         <div id="item"class="align-self">Abajo</div>
+         <div id="item" class="item">Centro</div>
+      </div>
+      </section>
+
+      <!-- FLEX RESPONSIVE -->
+      <section>
+      <h3>Flex Responsive</h3>
+      <p>Reduzca el tamaño de la pantalla para ver el cambio</p>
+      <div class="responsive">
+         <div class="item">Caja 1</div>
+         <div class="item">Caja 2</div>
+         <div class="item">Caja 3</div>
+      </div>
+      </section>
+
       
 
-      
 
 
 
+   <!-- Footer -->      
    <footer>
       <p>Pagina creada por Ricardo Hernández Salas &copy; 2026</p>
 
