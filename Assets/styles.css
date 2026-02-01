@@ -385,6 +385,31 @@ h3 {
     flex: 1 1 150px;
 }
 
-    .align-self {
-        align-self:   flex-end;
+.align-self {
+align-self:   flex-end;
+}
+
+.responsive {
+    position: relative;
+    left : 50%;
+    translate: -50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    border: 2px dashed #999;
+    flex-wrap: wrap;
+
+ }
+
+ .item-respo {
+    display: flex;
+    border: 2px solid #999;
+    background-color: lightblue;
+    width: 40px;
+  }
+
+ @media (max-width: 600px) {
+    .responsive {
+        flex-direction: column;
     }
+}
