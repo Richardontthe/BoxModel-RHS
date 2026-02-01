@@ -262,3 +262,56 @@ h3 {
         text-align: center;
         line-height: 150px;
     }
+
+    .contenedorPadre {
+        position: static;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .elementoHijo{
+        height: 50px;
+        width: 50px;
+        background-color: lightblue;
+        border: 1px solid black;
+        margin: 5px;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    .contenedorPadre-column {
+        position: static;
+        flex-wrap: nowrap;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+    .contenedorPadre-wrap {
+        position: static;
+        flex-wrap: wrap;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+    .contenedorPadre-flexflow {
+        position: static;
+        flex-flow: row wrap;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 20px auto;
+        display: flex;
+        overflow: auto;
+    }
