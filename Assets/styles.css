@@ -22,7 +22,7 @@ h3 {
     clear: both;
   }
 
-  .inlineBox {
+  .inlinecaja {
  
     border: 2px solid blue;
     padding: 10px;
@@ -30,7 +30,7 @@ h3 {
     background-color: lightblue;
    }
 
-  .InlineBox #p {
+  .Inlinecaja #p {
    color : red;
   }
 
@@ -38,7 +38,7 @@ h3 {
     display: none;
    }
 
-  #blockBox {
+  #blockcaja{
     display: block;
     border: 2px solid green;
     padding: 10px;
@@ -47,7 +47,7 @@ h3 {
     text-align: center;
    }
    
-   #inlineBlockBox{
+   #inlineBlockcaja{
 
         display:  inline-block;
         border: 2px solid orange;
